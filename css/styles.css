@@ -318,6 +318,7 @@ img {
 
 .about-box {
     padding-top: 0;
+    padding-bottom: 94px;
 }
 
 .subject {
@@ -595,6 +596,11 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility:visible;
+}
 .modal {
     position: absolute;
     top: 50%;
@@ -603,9 +609,27 @@ img {
 
     width: 528px;
     height: 581px;
-    background-color: var(--light-txt-color);  
+    background-color: var(--light-txt-color);
+    
 }
 .modal-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-txt-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    
+}
+.close-icon {
     
 }
 
